@@ -1,3 +1,27 @@
+'use client'
+
+import  RocketLaunchIcon  from "@mui/icons-material/RocketLaunch";
+import { Box, Button, Stack, Typography } from "@mui/material";
+
 export default function home() {
-  return <h1>Hello TS</h1>
+  return (
+    <Box py={6}>
+      <Typography variant="h3" fontWeight={700} gutterBottom>
+        Next.js
+      </Typography>
+
+      <Typography variant="body1" color="text.secondary" mb={3}>
+        Чистый старт, готов к разработке
+      </Typography>
+
+      <Stack direction='row' spacing={2}>
+        <Button variant="contained" startIcon={<RocketLaunchIcon/>}>
+          GET STARTED
+        </Button>
+        <Button variant="outlined">
+          docs
+        </Button>
+      </Stack>
+    </Box>
+  )
 }
