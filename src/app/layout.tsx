@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import './globals.css'
 
-import {theme} from '@/theme/theme'
+import {theme} from '@/lib/theme'
 import { ThemeProvider, CssBaseline, Container } from "@mui/material";
 import {Roboto} from 'next/font/google'
 
